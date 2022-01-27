@@ -12,12 +12,8 @@ module('Acceptance | logging out', function(hooks) {
 
   test('visiting /teams and clicking "Logout" ', async function(assert) {
     await visit('/teams'); // Go to the teams url
-    await this.pauseTest();
     assert.equal(currentURL(), '/teams');
-
     await click('.team-sidebar__logout-button'); // Click "logout button"
-
-
     assert.equal(currentURL(), '/login');
   });
 });
