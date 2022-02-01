@@ -1,5 +1,5 @@
 <!-- Channel -->
-<main class="flex-1 flex flex-col bg-white overflow-hidden channel">
+<ChatContainer>
   <ChannelHeader @title={{this.model.name}} @description={{this.model.description}} />
   {{format-timestamp "04-05-2022"}}
   <!-- Channel Message List -->
@@ -10,4 +10,4 @@
   </div>
 
   <ChannelFooter />
-</main>
+</ChatContainer>
