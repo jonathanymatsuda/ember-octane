@@ -603,6 +603,14 @@
       "body": "did it work",
       "createdAt": 1643790896323,
       "id": 61
+    },
+    {
+      "teamId": "linkedin",
+      "channelId": "recruiting",
+      "userId": "1",
+      "body": "Look it works",
+      "createdAt": 1643791185283,
+      "id": 62
     }
   ]
 }
