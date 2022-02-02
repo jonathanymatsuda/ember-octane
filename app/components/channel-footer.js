@@ -14,4 +14,11 @@ export default class ChannelFooterComponent extends Component {
   updateMessageBody(event) {
     this.body = event.target.value;
   }
+
+  @action
+  async handleSubmit(event) {
+    event.preventDefault();
+    await this.args.sendMessage(this.body);
+    this.body ='';
+  }
 }
