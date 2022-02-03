@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import { ALL_TEAMS } from '../teams';
+import fetch from 'fetch';
 
 export default class TeamsTeamRoute extends Route {
   async model ({ teamId }) {

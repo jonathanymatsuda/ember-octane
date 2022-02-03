@@ -12,8 +12,8 @@ export default class ChatContainerComponent extends Component {
 
   @action
   async loadMessages() {
-    const { channel: {id, teamId} } = this.args;
-    const resp = await fetch(`/api/teams/${teamId}/channels/${id}/messages`);
+    const { channel: {id, teamId}, } = this.args;
+    const resp = await fetch(`http://localhost:4200/api/teams/${teamId}/channels/${id}/messages`);
     this.messages = await resp.json();
   }
 

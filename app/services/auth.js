@@ -4,7 +4,6 @@ import Router from '@ember/routing/router';
 import { action } from '@ember/object';
 import CookiesService from 'ember-cookies/services/cookies';
 
-
 const AUTH_KEY = 'shlack-userId';
 
 export default class AuthService extends Service {
@@ -12,8 +11,10 @@ export default class AuthService extends Service {
    * @type {Router} // For auto-complete purposes
    */
   @service router;
-
-  @service cookies
+   /**
+   * @type {CookiesService}
+   */
+  @service cookies;
 
   get currentUserId() {
     return this.cookies.read(AUTH_KEY);

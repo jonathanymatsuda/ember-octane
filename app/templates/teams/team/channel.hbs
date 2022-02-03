@@ -8,6 +8,5 @@
       <Message @message={{m}} @delete={{fn channelApi.deleteMessage m.id}}/>
     {{/each}}
   </div>
-
-  <ChannelFooter @sendMessage={{channelApi.createMessage}}/>
+  <ChannelFooter @sendMessage={{channelApi.createMessage}} />
 </ChatContainer>

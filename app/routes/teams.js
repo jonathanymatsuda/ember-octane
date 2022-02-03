@@ -12,7 +12,7 @@ export default class TeamsRoute extends Route {
     }
   }
   async model() {
-    const response = await fetch ('/api/teams');
+    const response = await fetch('/api/teams');
     return response.json();
   }
 }
