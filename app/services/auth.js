@@ -14,6 +14,7 @@ export default class AuthService extends Service {
    /**
    * @type {CookiesService}
    */
+
   @service cookies;
 
   get currentUserId() {
